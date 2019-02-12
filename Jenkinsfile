@@ -5,11 +5,7 @@ pipeline {
         jdk 'JAVA_HOME'
     }
     stages {
-        stage ('Initialize') {
-            steps {
-				
-            }
-        }
+
 
         stage ('Build') {
             steps {
