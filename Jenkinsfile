@@ -9,10 +9,7 @@ pipeline {
             steps {
             
             	withEnv(["PATH=C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;C:\\Windows\\System32\\cmd.exe"]){
-            			bat '''
-							echo "PATH = %PATH%"
-							echo "MAVEN_HOME = %MAVEN_HOME%"
-						'''
+            			bat 'echo %PATH%'
             	}
 
             }
