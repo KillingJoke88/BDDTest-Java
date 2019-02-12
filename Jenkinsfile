@@ -7,10 +7,8 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-            
-            	withEnv(["PATH=C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;C:\\Windows\\System32\\cmd.exe"]){
-            			bat 'echo %PATH%'
-            	}
+            	echo 'not using shell'
+				bat 'echo step1'
 
             }
         }
