@@ -8,7 +8,7 @@ pipeline {
         stage ('Initialize') {
             steps {
             
-            	withEnv(["PATH=C:\Program Files\Git\usr\bin;C:\Program Files\Git\bin;]){
+            	withEnv(["PATH=C:/Program Files/Git/usr/bin;C:/Program Files/Git/bin;]){
 						sh '''
 							echo "PATH = ${PATH}"
 							echo "M2_HOME = ${M2_HOME}"
