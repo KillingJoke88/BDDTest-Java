@@ -9,7 +9,7 @@ pipeline {
             steps {
             
             	withEnv(["PATH=C:/Program Files/Git/usr/bin;C:/Program Files/Git/bin;]){
-						sh '''
+            			sh '''
 							echo "PATH = ${PATH}"
 							echo "M2_HOME = ${M2_HOME}"
 						'''
