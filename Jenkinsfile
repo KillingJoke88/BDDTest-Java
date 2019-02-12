@@ -7,9 +7,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-            	echo 'not using shell'
-				bat 'echo step1'
-
+            	bat 'echo %PATH%'
             }
         }
 
