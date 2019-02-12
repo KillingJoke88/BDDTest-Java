@@ -9,9 +9,9 @@ pipeline {
             steps {
             
             	withEnv(["PATH=C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;"]){
-            			sh '''
-							echo "PATH = ${PATH}"
-							echo "M2_HOME = ${M2_HOME}"
+            			bat '''
+							echo "PATH = %PATH%"
+							echo "MAVEN_HOME = %MAVEN_HOME%"
 						'''
             	}
 
@@ -20,11 +20,11 @@ pipeline {
 
         stage ('Build') {
             steps {
-					    sh 'mvn clean install' 
+					    bat 'mvn clean install' 
             }
             post {
                 success {
-					sh ''' 
+					bat ''' 
 						echo "Success"
 					'''
                 }
