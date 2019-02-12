@@ -8,7 +8,7 @@ pipeline {
         stage ('Initialize') {
             steps {
             
-            	withEnv(["PATH=C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;C:\Windows\System32\cmd.exe"]){
+            	withEnv(["PATH=C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;C:\\Windows\\System32\\cmd.exe"]){
             			bat '''
 							echo "PATH = %PATH%"
 							echo "MAVEN_HOME = %MAVEN_HOME%"
