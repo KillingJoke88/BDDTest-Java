@@ -5,7 +5,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/features/createAccount", glue="")
+@CucumberOptions(features="src/test/resources/features/createAccount", 
+		glue="",
+		monochrome = true)
 public class TestRunner_CreateUserAccount {
 
 	

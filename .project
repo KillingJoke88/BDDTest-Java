@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/test/resources/features/qTestScenario</name>
+			<type>2</type>
+			<location>D:/PRJT-JAVA/BddTestJava/src/test/resources/features/qTestScenario</location>
+		</link>
+	</linkedResources>
 </projectDescription>

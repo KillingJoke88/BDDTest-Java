@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/resources/features/essai/DataDrivenTests.feature",
-		glue=""
+		glue="",
+		monochrome = true
 		)
 public class TestRunner_DataDrivenTests {
 

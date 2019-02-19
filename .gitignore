@@ -1,1 +1,6 @@
 /target/
+output/path/style.css
+output/path/report.js
+output/path/index.html
+output/path/jquery-1.8.2.min.js
+output/path/formatter.js
