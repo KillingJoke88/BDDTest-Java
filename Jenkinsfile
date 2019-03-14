@@ -13,7 +13,6 @@ pipeline {
 
         stage ('Build') {
             steps {
-				bat 'git add "D:\PRJT-JAVA\BddTestJava\essai.xml"' 
 				bat 'git commit -m "Update"'
 				bat 'mvn clean install' 
             }
