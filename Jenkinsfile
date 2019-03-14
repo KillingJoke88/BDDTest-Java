@@ -14,6 +14,8 @@ pipeline {
         stage ('Build') {
             steps {
 				bat 'mvn clean install' 
+				bat 'git add essai.xml' 
+				bat 'git commit'
             }
             post {
                 success {
